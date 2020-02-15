@@ -20,6 +20,8 @@ service: sls-project
 # Check out our docs for more details
 # frameworkVersion: "=X.X.X"
 
+plugins:
+  - serverless-sam
 provider:
   name: aws
   runtime: nodejs12.x
