@@ -10,7 +10,7 @@
 #    docs.serverless.com
 #
 # Happy Coding!
-
+#Added git branch
 service: sls-project
 # app and org for use with dashboard.serverless.com
 #app: your-app-name
@@ -26,7 +26,6 @@ provider:
   name: aws
   runtime: nodejs12.x
   stage: dev
-  profile: msa
 
 # you can overwrite defaults here
 #  stage: dev
