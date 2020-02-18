@@ -1,0 +1,47 @@
+{
+  "resourceId": "2yhac8",
+  "authorizer": {
+    "claims": {
+      "sub": "3baec3c4-2e86-424a-ae86-3df15c223b27",
+      "email_verified": "true",
+      "iss": "https://cognito-idp.us-east-1.amazonaws.com/us-east-1_gnXTF7OuR",
+      "phone_number_verified": "true",
+      "cognito:username": "3baec3c4-2e86-424a-ae86-3df15c223b27",
+      "aud": "4d4j4i3qhaehveogtn4ndihsnp",
+      "event_id": "a3fbae8c-5bdb-470b-b38f-3204c2ec805a",
+      "token_use": "id",
+      "auth_time": "1581756779",
+      "phone_number": "+355686190173",
+      "exp": "SatFeb 15 09:52:59 UTC 2020",
+      "iat": "Sat Feb 15 08:52:59 UTC2020",
+      "email": "eraldcalaj3@gmail.com"
+    }
+  },
+  "resourcePath": "/{proxy+}",
+  "httpMethod": "GET",
+  "extendedRequestId": "H7ivbEwKIAMF16g=",
+  "requestTime": "15/Feb/2020:08:53:41+0000",
+  "path": "/dev/get2",
+  "accountId": "748496058110",
+  "protocol": "HTTP/1.1",
+  "stage": "dev",
+  "domainPrefix": "svctp2ntb9",
+  "requestTimeEpoch": 1581756821857,
+  "requestId": "280cfff8-df68-47b0-9923-f5fd8fa73bec",
+  "identity": {
+    "cognitoIdentityPoolId": null,
+    "accountId": null,
+    "cognitoIdentityId": null,
+    "caller": null,
+    "sourceIp": "79.106.170.218",
+    "principalOrgId": null,
+    "accessKey": null,
+    "cognitoAuthenticationType": null,
+    "cognitoAuthenticationProvider": null,
+    "userArn": null,
+    "userAgent": "PostmanRuntime/7.22.0",
+    "user": null
+  },
+  "domainName": "svctp2ntb9.execute-api.us-east-1.amazonaws.com",
+  "apiId": "svctp2ntb9"
+}

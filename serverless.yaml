@@ -1,0 +1,47 @@
+# serverless.yml
+
+service: MSA
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: us-east-1
+  vpc:
+    securityGroupIds:
+      - sg-0db9ac95b83c45afd
+    subnetIds:
+      - subnet-0797fd0ff2417c7f7
+      - subnet-065927bc6913c153c
+functions:
+  users:
+    handler: index.users
+    cors: true
+    events:
+      - http:
+          path: /users/
+          method: any
+          # authorizer:
+          #   arn: arn:aws:cognito-idp:us-east-1:748496058110:userpool/us-east-1_gnXTF7OuR
+      - http:
+          path: "/users/{proxy+}"
+          method: any
+          # authorizer:
+          #   arn: arn:aws:cognito-idp:us-east-1:748496058110:userpool/us-east-1_gnXTF7OuR
+# resources:
+#   Resources:
+#     ApiGatewayAuthorizer:
+#       Type: AWS::ApiGateway::Authorizer
+#       Properties:
+#         Name: CognitoUserPool
+#         Type: COGNITO_USER_POOLS
+#         IdentitySource: method.request.header.Authorization
+#         RestApiId:
+#           Ref: ApiGatewayRestApi
+#         ProviderARNs:
+#           - Fn::GetAtt:
+#               - MSA
+#               - arn:aws:cognito-idp:us-east-1:748496058110:userpool/us-east-1_gnXTF7OuR
+
+#     UserPool:
+#       Type: AWS::Cognito::UserPool

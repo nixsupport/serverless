@@ -1,11 +1,3 @@
-Serverless README
-updated
-another test
-take2
-take3
-take4
-take5
-take6
-take7
-take8
+aws cognito-idp admin-initiate-auth --region us-east-1 --cli-input-json file://auth.json
 
+serverless deploy -f app
