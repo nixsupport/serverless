@@ -5,6 +5,8 @@ service: msa-service
 provider:
   name: aws
   runtime: nodejs12.x
+  deploymentBucket:
+    name: msa-dev-lambda-deploy-packages
   stage: dev
   region: us-east-1
   vpc:
