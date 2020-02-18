@@ -1,6 +1,6 @@
 # serverless.yml
 
-service: MSA
+service: msa-1
 
 provider:
   name: aws
